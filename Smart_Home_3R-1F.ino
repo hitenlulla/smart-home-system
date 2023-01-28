@@ -23,18 +23,20 @@ using namespace ace_button;
 #define SIRI_FEATURES true
 #define BLYNK_FEATURES true
 
-char mqtt_server[40] = "192.168.101.2"; 
-char blynk_server_ip[40] = "192.168.101.2";
-char mqtt_username[20] = "ASAP_MQTT";
-char blynk_auth[34] = "";
-char email_id[100] = "hitenhomeautomation@gmail.com";
-char device_id[5] = "D2";
+// Variables
+char mqtt_server[40] = "<MQTT_SERVER_IP_HERE>"; 
+char blynk_server_ip[40] = "<BLYNK_SERVER_IP_HERE>";
+char mqtt_username[20] = "<MQTT_USER_HERE>";
+char blynk_auth[34] = "<BLYNK_AUTH_HERE>";
+char email_id[100] = "<EMAIL_ID_HERE>";
+char device_id[5] = "D1";
+const char* mqtt_pass = "<MQTT_PASS_HERE>";
+
+// Constants
 char serial_number[9] = "XXXXXXXX";
 int port = 8080;
-char* ap_ssid = "ASAP S-Board";
+char* ap_ssid = "Smart Home System";
 char* ap_pass = "123456789";
-const char* mqtt_pass = "mqttASAP@300621";
-
 
 String generate_serial_number(char* curr_serial_number){  
   String new_serial_number = "";
